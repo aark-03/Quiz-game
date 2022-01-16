@@ -6,6 +6,8 @@ class Question:
     self.question = question
     self.options = options
     self.answer = answer
+  def giveanswer():
+    print(1)
 
 q1 = Question("how old am I?", [13,17,57,12], 12)
 
