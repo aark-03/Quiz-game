@@ -12,9 +12,14 @@ class Question:
     print(self.question)
     for opt in self.options:
       print(opt)
+    answer = input("Enter answer: ")
+    if answer == self.answer:
+      return True
+    else: 
+      return False
 
-q1 = Question("how old am I?", [13,17,57,12], 12)
-q1.ask()
+q1 = Question("how old am I?", ["13","17","57","12"], "12")
+print(q1.ask())
 
 # Quiz class
 # properties: Questions, Score
