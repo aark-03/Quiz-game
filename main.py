@@ -1,5 +1,6 @@
 # Class Question
 # properties: The question, The Options, The Answer
+# methods: answer, ask
 
 class Question:
   def __init__(self, question, options, answer):
@@ -21,6 +22,12 @@ class Question:
 q1 = Question("how old am I?", ["13","17","57","12"], "12")
 print(q1.ask())
 
-# Quiz class
-# properties: Questions, Score
-# methods: Answer, Ask
+# Class Quiz
+# properties: Questions, name, grade
+# methods: get question, score
+
+class Quiz:
+  def _init_(self, Question, name, grade):
+    self.question = Question
+    self.name = name
+    self.grade = grade
